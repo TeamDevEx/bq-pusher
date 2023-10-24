@@ -1,5 +1,6 @@
 import * as core from '@actions/core'
 import { BigQuery } from '@google-cloud/bigquery'
+import moment from 'moment'
 
 const totalCrq = core.getInput('totalCrq');
 const tableId = core.getInput('tableId');
