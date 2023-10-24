@@ -10,7 +10,7 @@ async function getCRQResult(totalCrq, tableId, datasetId, projectId) {
   try {
     const payload = {
       ingestion_time: moment.utc().format("YYYY-MM-DD HH:mm:ss.SSSSSS"),
-      totalCrq: totalCrq,
+      total_crq: totalCrq,
     };
 
     const bigquery = new BigQuery({ projectId })
